@@ -1,0 +1,44 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(-50%) translateY(14px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.phone-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+.btn:hover,
+.app-card:hover,
+.info-card:hover,
+.feature-card:hover,
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.app-card,
+.info-card,
+.feature-card,
+.testimonial-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
